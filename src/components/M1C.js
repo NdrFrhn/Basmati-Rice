@@ -15,22 +15,22 @@ const M1C = () => {
 
     return (
         <div className="container">
-        <img onClick={openModal_1_} className="square" src={img1}/>
-        <Modal
-            isOpen={modal_1_IsOpen}
-            onRequestClose={closeModal_1_}
-            className='modal'
-            ariaHideApp={false}
-            closeTimeOutMS={200}
-        > 
-            <div className="img">
-                <img className="img" src={img1} />
-                <div className="modal-pile">
-                    <h3> Clean asparagi. Sciacqua bene gli asparagi sotto l'acqua corrente.</h3>
-                    <button className="next-button" onClick={closeModal_1_}> Back </button>
+            <img onClick={openModal_1_} className="square" src={img1}/>
+            <Modal
+                isOpen={modal_1_IsOpen}
+                onRequestClose={closeModal_1_}
+                className='modal'
+                ariaHideApp={false}
+                closeTimeOutMS={200}
+            > 
+                <div className="img">
+                    <img className="img" src={img1} />
+                    <div className="modal-pile">
+                        <h3> Clean asparagi. Sciacqua bene gli asparagi sotto l'acqua corrente.</h3>
+                        <button className="next-button" onClick={closeModal_1_}> Back </button>
+                    </div>
                 </div>
-            </div>
-        </Modal>
+            </Modal>
         </div>
     );
 }
